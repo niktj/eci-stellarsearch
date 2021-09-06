@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Forwarding site...</title>
+  </head>
+  <body>
+    <script>
+      let current_ = window.location.href;
+      if(current_.includes('github.io')){
+        console.log('Redirecting from github site...');
+        let new_link = current_.replace('niktj.github.io','stellarsearch.com');
+        console.log(new_link);
+        window.location.href=new_link;
+      }else{
+        console.log('Redirecting from www ...');
+        window.location.href='https://stellarsearch.com';
+      }
+    </script>
+  </body>
+</html>
